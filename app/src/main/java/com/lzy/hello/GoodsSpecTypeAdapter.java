@@ -45,7 +45,7 @@ public class GoodsSpecTypeAdapter extends BaseAdapter<StoreManagerListEntity.Gui
         mInfoAdapter.setOnItemDeleteListener(new ImageRecylerReduceItemListener() {
             @Override
             public void onReduceItemListener(int position) {
-                List<String> list = bindAnotherRecyler1();
+                List<String> list = bindAnotherRecyler();
                 mAddItemListener.onAddItemListener(list, position);
             }
         });
@@ -58,7 +58,7 @@ public class GoodsSpecTypeAdapter extends BaseAdapter<StoreManagerListEntity.Gui
                     if (!TextUtils.isEmpty(size)) {
                         mInfoAdapter = new GoodsSpecTypeInfoAdapter(mContext, item.guigeArray, position);
                         item.guigeArray.add(size);
-                        List<String> list = bindAnotherRecyler1();
+                        List<String> list = bindAnotherRecyler();
                         holder.mRv_spec_size.setAdapter(mInfoAdapter);
                         mAddItemListener.onAddItemListener(list, position);
                         holder.mEt_size.setText("");
@@ -67,7 +67,7 @@ public class GoodsSpecTypeAdapter extends BaseAdapter<StoreManagerListEntity.Gui
                             @Override
                             public void onReduceItemListener(int position) {
 
-                                List<String> list = bindAnotherRecyler1();
+                                List<String> list = bindAnotherRecyler();
                                 mAddItemListener.onAddItemListener(list, position);
                             }
                         });
@@ -82,7 +82,7 @@ public class GoodsSpecTypeAdapter extends BaseAdapter<StoreManagerListEntity.Gui
 
     }
 
-    private List<String> bindAnotherRecyler1() {
+    private List<String> bindAnotherRecyler() {
         int b = 0;
         if (mItems.size() > 0) {
             List<String> copylist = new ArrayList<>();
