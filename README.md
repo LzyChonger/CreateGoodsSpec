@@ -2,4 +2,4 @@
 
 简书项目介绍地址： https://www.jianshu.com/p/9ba07307a5ea
 
-![image](https://github.com/LzyChonger/CreateGoodsSpec/blob/master/app/src/main/assets/show.gif）
+![image](https://github.com/LzyChonger/CreateGoodsSpec/blob/master/app/src/main/assets/show.gif ）
